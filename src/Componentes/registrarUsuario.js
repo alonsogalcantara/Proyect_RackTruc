@@ -15,8 +15,14 @@ class registrarUsuario extends React.Component{
                         <input type="email" name="CorreE" placeholder="Correo electr&oacute;nico" />
                         <input type="text" name="TeleC" placeholder="Tel&eacute;fono celular" />
                         <input type="date" name="FechNa" placeholder="Fecha de nacimiento" />
+                        <p>Elige un archivo</p>
+                        <label class="file">
+                            <input type="file" className="custom-file-input" name="adjunto" accept=".pdf, .jpg, .png" multiple />
+                            <span class="file-custom"></span>
+                        </label>
+                        
 
-                        <label for="Tipo de usuario">Tipo de usuario</label>
+                        <label for="Tipo de usuario" > <h2>Tipo de usuario </h2></label >
                         <select id="tipoUsuario" name="tipoUsuario">
                             <optgroup>
                                 <option value="fishkeeping">Administrador</option>
@@ -34,7 +40,6 @@ class registrarUsuario extends React.Component{
 
                     <input type="button" value="Aceptar" />
                     <input type="button" className="button-cancelar" value="Cancelar"/>
-                    
                 </form>
         </div>
     }
