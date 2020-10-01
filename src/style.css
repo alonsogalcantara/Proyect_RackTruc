@@ -62,7 +62,7 @@
 .form-style-5 input[type="url"]:focus,
 .form-style-5 textarea:focus,
 .form-style-5 select:focus {
-    background: #97bdd3;
+    background: #e1e5e7;
 }
 
 .form-style-5 select {
@@ -102,7 +102,8 @@
 }
 
 .form-style-5 input[type="submit"]:hover,
-.form-style-5 input[type="button"]:hover{
+.form-style-5 input[type="button"]:hover,
+.form-style-5 input[class="button-cancelar"]:hover {
     background: #109177;
 }
 
@@ -112,7 +113,7 @@
     padding: 19px 39px 18px 39px;
     color: #FFF;
     margin: 0 auto;
-    background: #741919a1;
+    background: #380404d2;
     font-size: 18px;
     text-align: center;
     font-style: normal;
@@ -120,8 +121,4 @@
     border: 1px solid #16a085;
     border-width: 1px 1px 3px;
     margin-bottom: 10px;
-}
-
-.form-style-5 input[class="button-cancelar"]:hover {
-    background: #300101;
 }

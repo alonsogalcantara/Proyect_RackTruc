@@ -19,7 +19,7 @@ class registrarUsuario extends React.Component{
                         <label for="Tipo de usuario">Tipo de usuario</label>
                         <select id="tipoUsuario" name="tipoUsuario">
                             <optgroup>
-                                <option value="fishkeeping">Adminostrador</option>
+                                <option value="fishkeeping">Administrador</option>
                                 <option value="reading">Transportista</option>
                                 <option value="boxing">Vendedor</option>
                             </optgroup>
