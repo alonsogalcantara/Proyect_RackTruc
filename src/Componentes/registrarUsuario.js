@@ -45,4 +45,6 @@ class registrarUsuario extends React.Component{
     }
 }
 
+
+//hola bb estoy en el master
 export default registrarUsuario;
