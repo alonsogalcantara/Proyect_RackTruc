@@ -46,5 +46,5 @@ class registrarUsuario extends React.Component{
 }
 
 
-//hola bb estoy en el master
+//hola bb estoy mi branch Urban por favor checalo y subelo al Master
 export default registrarUsuario;
