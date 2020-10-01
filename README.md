@@ -1,3 +1,8 @@
+# Project Rack Truk
+> Este projecto es de ámbito estudiantil, desarrollado por alumnos del [Instituto Leornado Bravo](https://ilb.mx/).
+
+## Importante
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
