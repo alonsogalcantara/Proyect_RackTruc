@@ -31,7 +31,9 @@ class registrarUsuario extends React.Component{
                         <legend><span class="number">2</span>Informacion adicional</legend>
                         <textarea name="caracter" placeholder="Caracter&iacute;sticas"></textarea>
                     </fieldset>
+
                     <input type="button" value="Aceptar" />
+                    <input type="button" className="button-cancelar" value="Cancelar"/>
                     
                 </form>
         </div>
