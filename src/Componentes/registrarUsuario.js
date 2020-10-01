@@ -1,46 +1,39 @@
 import React from 'react'
 
+
 class registrarUsuario extends React.Component{
     render(){
-        return <div>
-            <div>
-                <h1>REGISTRAR USUARIO</h1>
-            </div>
+        return <div className = "form-style-5" >
+                <form>
+                    <fieldset>
+                        <legend><span class="number">1</span>Registrar usuario</legend>
+                        <input type="text" name="Nombre" placeholder="Nombre" />
+                        <input type="text" name="App" placeholder="Apellido Paterno" />
+                        <input type="text" name="Apm" placeholder="Apellido Materno" />
+                        <input type="text" name="CURP" placeholder="CURP" />
+                        <input type="text" name="RFC" placeholder="RFC" />
+                        <input type="email" name="CorreE" placeholder="Correo electr&oacute;nico" />
+                        <input type="text" name="TeleC" placeholder="Tel&eacute;fono celular" />
+                        <input type="date" name="FechNa" placeholder="Fecha de nacimiento" />
 
-            <form action="">
-                <div>
-                    <input type="text" placeholder="Nombre" id="nombre" />
-                </div>
+                        <label for="Tipo de usuario">Tipo de usuario</label>
+                        <select id="tipoUsuario" name="tipoUsuario">
+                            <optgroup>
+                                <option value="fishkeeping">Adminostrador</option>
+                                <option value="reading">Transportista</option>
+                                <option value="boxing">Vendedor</option>
+                            </optgroup>
 
-                <div>
-                    <input type="text" placeholder="Apellido Paterno" id="ap"/>
-                </div>
+                        </select>      
+                    </fieldset>
 
-                <div>
-                    <input type="text" placeholder="Apellido Materno" id="am"/>
-                </div>
-                
-                <div>
-                    <input type="text" placeholder="CURP" id="curp"/>
-                </div>
-
-                <div>
-                    <input type="text" placeholder="RFC" id="ap"/>
-                </div>
-
-                <div>
-                    <input type="text" placeholder="Telefono celular" id="ap"/>
-                </div>
-
-                <div>
-                    <input type="text" placeholder="Fecha de nacimiento" id="ap"/>
-                </div>
-
-                <div>
-                    <input type="email" placeholder="E-mail" id="correo" />
-                </div>
-                <button type="email">Enviar</button>
-            </form>
+                    <fieldset>
+                        <legend><span class="number">2</span>Informacion adicional</legend>
+                        <textarea name="caracter" placeholder="Caracter&iacute;sticas"></textarea>
+                    </fieldset>
+                    <input type="button" value="Aceptar" />
+                    
+                </form>
         </div>
     }
 }
