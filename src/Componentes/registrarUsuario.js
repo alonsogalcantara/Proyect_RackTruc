@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 class registrarUsuario extends React.Component{
     render(){
         return <div className = "form-style-5" >
@@ -21,7 +20,6 @@ class registrarUsuario extends React.Component{
                             <span class="file-custom"></span>
                         </label>
                         
-
                         <label for="Tipo de usuario" > <h2>Tipo de usuario </h2></label >
                         <select id="tipoUsuario" name="tipoUsuario">
                             <optgroup>
@@ -45,6 +43,4 @@ class registrarUsuario extends React.Component{
     }
 }
 
-
-//hola bb estoy mi branch Urban por favor checalo y subelo al Master
 export default registrarUsuario;
