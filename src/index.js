@@ -12,7 +12,7 @@ import * as serviceWorker from './serviceWorker';
 //);
 
 ReactDOM.render(
-    < RegistrarUsuario /> ,
+    <RegistrarUsuario/> ,
   document.getElementById('root')
 );
 
