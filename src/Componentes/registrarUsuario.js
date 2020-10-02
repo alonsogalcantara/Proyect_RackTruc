@@ -2,19 +2,76 @@ import React from 'react'
 
 class registrarUsuario extends React.Component{
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            name: '',
+            app: '',
+            apm: '',
+            curp: '',
+            rfc: '',
+            email: '',
+            telec: '',
+            fechan: ''
+        };
+
+        this.nameHandler = this.nameHandler.bind(this);
+        this.appHandler = this.appHandler.bind(this);
+        this.apmHandler = this.apmHandler.bind(this);
+        this.curpHandler = this.curpHandler.bind(this);
+        this.rfcHandler = this.rfcHandler.bind(this);
+        this.emailHandler = this.emailHandler.bind(this);
+        this.telecHandler = this.telecHandler.bind(this);
+        this.fechanHandler = this.fechanHandler.bind(this);
+    }
+
+
+    nameHandler(event) {
+        this.setState({ name: event.target.value });
+    }
+
+    appHandler(event) {
+        this.setState({ app: event.target.value });
+    }
+
+    apmHandler(event) {
+        this.setState({ apm: event.target.value });
+    }
+
+    curpHandler(event) {
+        this.setState({ curp: event.target.value });
+    }
+
+    rfcHandler(event) {
+        this.setState({ rfc: event.target.value });
+    }
+
+    emailHandler(event) {
+        this.setState({ email: event.target.value });
+    }
+
+    telecHandler(event) {
+        this.setState({ telec: event.target.value });
+    }
+
+    fechanHandler(event) {
+        this.setState({ fechan: event.target.value });
+    }
+
     render(){
         return <div className = "form-style-5" >
                 <form>
                     <fieldset>
                         <legend><span className="number">1</span>Registrar usuario</legend>
-                        <input type="text" value={this.state.value} onChange={this.handleChange} name="Nombre" placeholder="Nombre" />
-                        <input type="text" name="App" placeholder="Apellido Paterno" />
-                        <input type="text" name="Apm" placeholder="Apellido Materno" />
-                        <input type="text" name="CURP" placeholder="CURP" />
-                        <input type="text" name="RFC" placeholder="RFC" />
-                        <input type="email" name="CorreE" placeholder="Correo electr&oacute;nico" />
-                        <input type="text" name="TeleC" placeholder="Tel&eacute;fono celular" />
-                        <input type="date" name="FechNa" placeholder="Fecha de nacimiento" />
+                        <input type="text" value={this.state.name} onChange={this.nameHandler} name="Nombre" placeholder="Nombre" />
+                        <input type="text" value={this.state.app} onChange={this.appHandler} name="App" placeholder="Apellido Paterno" />
+                        <input type="text" value={this.state.apm} onChange={this.apmHandler} name="Apm" placeholder="Apellido Materno" />
+                        <input type="text" value={this.state.curp} onChange={this.curpHandler} name="CURP" placeholder="CURP" />
+                        <input type="text" value={this.state.rfc} onChange={this.rfcHandler} name="RFC" placeholder="RFC" />
+                        <input type="email" value={this.state.email} onChange={this.emailHandler} name="CorreE" placeholder="Correo electr&oacute;nico" />
+                        <input type="text" value={this.state.telec} onChange={this.telecHandler} name="TeleC" placeholder="Tel&eacute;fono celular" />
+                        <input type="date" value={this.state.fechan}  onChange={this.fechanHandler} name="FechNa" placeholder="Fecha de nacimiento" />
+                        
                         <p>Elige un archivo</p>
                         <label className="file">
                             <input type="file" className="custom-file-input" name="adjunto" accept=".pdf, .jpg, .png" multiple />
