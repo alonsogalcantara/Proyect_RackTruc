@@ -1,5 +1,8 @@
 import React from 'react'
 
+//Extras
+//import validate from "../helpers/validation";
+
 class registrarUsuario extends React.Component{
 
      constructor(props) {
@@ -7,44 +10,78 @@ class registrarUsuario extends React.Component{
          this.state = {
              form: {
                  name: {
-                     value: ''
+                     value: '',
+                     name: 'name',
+                     placeholder: "Nombre..."
                  },
                  app: {
-                     value: ''
+                     value: '',
+                     name: 'app',
+                     placeholder: "Apellido Paterno..."
                  },
                  apm: {
-                     value: ''
+                     value: '',
+                         name: 'apm',
+                         placeholder: "Apellido Materno..."
                  },
                  curp: {
-                     value: ''
+                     value: '',
+                         name: 'curp',
+                         placeholder: "CURP..."
                  },
                  rfc: {
-                     value: ''
+                     value: '',
+                         name: 'rfc',
+                         placeholder: "RFC..."
                  },
                  email: {
-                     value: ''
+                     value: '',
+                         name: 'email',
+                         placeholder: "Correo electrónico..."
                  },
                  telec: {
-                     value: ''
+                    value: '',
+                    name: 'telec',
+                    placeholder: "Teléfono..",
+                    valid: 0,
+                    touched: 0,
+                    validationRules: {
+                        isRequired: true,
+                        minLength: 5,
+                        onlyNumbers: true
+                    }
                  },
                  fechan: {
-                     value: ''
+                     value: '',
+                         name: 'fechan',
+                         placeholder: "Fecha de nacimiento.."
                  }
-             }
-         };
+            },
+
+            type: {
+                name: "tipoUsuario",
+                options: [
+                    { value: "", displayValue: "Elige un usuario..." },
+                    { value: "ADM", displayValue: "Adminitrador" },
+                    { value: "CHO", displayValue: "Chofer" },
+                    { value: "VTS", displayValue: "Ventas" }
+                ]
+            }
+        }
 
          this.formHandler = this.formHandler.bind(this);
      }
 
      formHandler(event) {
          const { name, value } = event.target;
+         //const valid = validate(value, this.state.form.validationRules);
+         //const touched = 1;
 
          this.setState((state, props) => ({
              form: {
                  ...state.form,
                  [name]: {
-                     ...state.form[name],
-                     value
+                     ...state.form[name], value
                  }
              }
          }));
@@ -55,30 +92,34 @@ class registrarUsuario extends React.Component{
                 <form value={this.state.form} onChange={this.formHandler}>
                     <fieldset>
                         <legend><span className="number">1</span>Registrar usuario</legend>
-                        <input type="text" name="name" placeholder="Nombre" />
-                        <input type="text" name="app" placeholder="Apellido Paterno" />
-                        <input type="text" name="apm" placeholder="Apellido Materno" />
-                        <input type="text" name="curp" placeholder="CURP" />
-                        <input type="text" name="rfc" placeholder="RFC" />
-                        <input type="email" name="email" placeholder="Correo electr&oacute;nico" />
-                        <input type="text" name="telec" placeholder="Tel&eacute;fono celular" />
-                        <input type="date" name="fechan" placeholder="Fecha de nacimiento" />
+                        <input type="text" name={this.state.form.name.name} placeholder={this.state.form.name.placeholder} />
+                        <input type="text" name={this.state.form.app.name} placeholder={this.state.form.app.placeholder} />
+                        <input type="text" name={this.state.form.apm.name} placeholder={this.state.form.apm.placeholder} />
+                        <input type="text" name={this.state.form.curp.name} placeholder={this.state.form.curp.placeholder} />
+                        <input type="text" name={this.state.form.rfc.name} placeholder={this.state.form.rfc.placeholder} />
+                        <input type="email" name={this.state.form.email.name} placeholder={this.state.form.email.placeholder} />
+                        <input type="text" name={this.state.form.telec.name} placeholder={this.state.form.telec.placeholder} />
+                        <input type="date" name={this.state.form.fechan.name} placeholder={this.state.form.fechan.placeholder} />
+
+                        <label htmlFor="Tipo de usuario" > <h2>Tipo de usuario </h2></label >
+                        <select 
+                            name={this.state.type.name}
+                            onChange={this.formHandler}
+                            options={this.state.type.options}>
+                            <optgroup>
+                                <option value="">Selecciona una opcion...</option>
+                                <option value="admin">Administrador</option>
+                                <option value="transportista">Transportista</option>
+                                <option value="vendedor">Vendedor</option>
+                            </optgroup>
+                        </select>  
                         
                         <p>Elige un archivo</p>
                         <label className="file">
                             <input type="file" className="custom-file-input" name="adjunto" accept=".pdf, .jpg, .png" multiple />
                             <span className="file-custom"></span>
                         </label>
-                        
-                        <label htmlFor="Tipo de usuario" > <h2>Tipo de usuario </h2></label >
-                        <select id="tipoUsuario" name="tipoUsuario">
-                            <optgroup>
-                                <option value="fishkeeping">Administrador</option>
-                                <option value="reading">Transportista</option>
-                                <option value="boxing">Vendedor</option>
-                            </optgroup>
-
-                        </select>      
+                     
                     </fieldset>
 
                     <fieldset>

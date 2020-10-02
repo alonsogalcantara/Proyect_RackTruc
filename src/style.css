@@ -166,7 +166,7 @@
 }
 
 .file-custom:after {
-    content: "Choose file...";
+    content: "Elige un archivo...";
 }
 
 .file-custom:before {
