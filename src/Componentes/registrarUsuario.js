@@ -57,30 +57,4 @@ class registrarUsuario extends React.Component{
     }
 }
 
-procesar(e) {
-    e.preventDefault();
-    alert('Dato cargado '+this.state.nombre + ' ' + 
-                         +this.state.edad + ' ' + 
-                         +this.state.estudio);
-  }
-
-  cambioNombre(e) {
-    this.setState( {
-      nombre: e.target.value
-    })
-  }
-
-  cambioEdad(e) {
-    this.setState( {
-      edad: e.target.value
-    })
-  }  
-
-  cambioEstudio(e) {
-    this.setState( {
-      estudio: !this.state.estudio
-    })
-  }    
-}
-
 export default registrarUsuario;
