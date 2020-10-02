@@ -1,19 +1,6 @@
 import React from 'react'
 
 class registrarUsuario extends React.Component{
-    constructor(props) {
-        super(props);
-        this.state = ({
-            nombre:'',
-            edad:'',
-            estudio: false
-          })
-
-        this.procesar = this.procesar.bind(this);
-        this.cambioNombre = this.cambioNombre.bind(this);
-        this.cambioEdad = this.cambioEdad.bind(this);    
-        this.cambioEstudio = this.cambioEstudio.bind(this);
-      }
 
     render(){
         return <div className = "form-style-5" >
