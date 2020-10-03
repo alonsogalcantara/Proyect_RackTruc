@@ -1,5 +1,4 @@
 import React from 'react'
-
 class registrarUsuario extends React.Component{
 
     constructor(props) {
@@ -100,5 +99,6 @@ class registrarUsuario extends React.Component{
         </div>
     }
 }
+
 
 export default registrarUsuario;

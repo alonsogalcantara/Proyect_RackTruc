@@ -1,13 +1,13 @@
 import React from 'react';
-import './App.css';
-import detallesCamionero from './Componentes/detallesCamionero';
-function App() {
+import './index.css';
+import DetallesCamionero from './Componentes/detallesCamionero';
+import RegistrarUsuario from './Componentes/registrarUsuario';
+
+export default function App() {
   return (
     <div>
-     <detallesCamionero/>
-
+     <RegistrarUsuario/>
+     <DetallesCamionero/>
     </div>
   );
 }
-
-export default App;
