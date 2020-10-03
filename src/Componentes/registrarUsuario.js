@@ -134,4 +134,5 @@ class registrarUsuario extends React.Component{
     }
 }
 
+
 export default registrarUsuario;
