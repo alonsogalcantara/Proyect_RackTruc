@@ -127,6 +127,32 @@
     margin-bottom: 10px;
 }
 
+
+.field {
+    max-width: 1500px;
+    padding: 10px 20px;
+    background: #08b4ee;
+    margin: 1px auto;
+    padding: 1px;
+    background: #66a1b4;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    
+}
+
+.field>button {
+    padding:0.6em 0.8em;
+    background-color:rgb(0, 0, 0);
+    color:white;
+    border:none;
+  }
+  .field>input[type=text] {
+    flex:1;
+    padding:0.6em;
+    border:0.2em solid rgb(0, 0, 0);
+  }
+
 /*
  * File
  */
