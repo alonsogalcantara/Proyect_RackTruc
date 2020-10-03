@@ -18,10 +18,8 @@ class headerPagina extends React.Component{
     render(){
         return <div className = "barraBuscadora" >
                 <form>
-          
-                 
                     <div class="field" id="searchform">
-                    <img src="logo192.png" style={{height:30, width: 30}} hspace="25"/>
+                    <img style={{height:30, width: 30}} hspace="25"/>
                     <input type="text" id="Busqueda" placeholder="" style={{height:20, width:300}}/> <button type="button" id="Buscar">BUSCAR</button>
                     <text>ID</text>        
                     <text>/</text> 

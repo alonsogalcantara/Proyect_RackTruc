@@ -4,7 +4,6 @@ import './index.css';
 //import RegistrarUsuario from './Componentes/registrarUsuario';
 import HeaderPagina from './Componentes/headerPagina';
 
-
 export default function App() {
   return (
     <div>
