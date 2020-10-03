@@ -11,6 +11,7 @@ class registrarUsuario extends React.Component{
      constructor(props) {
          super(props);
          this.state = {
+
              form: {
                  name: {
                      value: '',
@@ -206,17 +207,14 @@ class registrarUsuario extends React.Component{
                     className="custom-file-input"
                     name="adjunto"
                     accept=".pdf, .jpg, .png"
-                    multiple
                     onChange={this.onChangeHandler}
                   />
-                  <span className="file-custom"></span>
                 </label>
               </fieldset>
-
               <input
                 type="button"
+                className="button"
                 value="Aceptar"
-                onClick={this.fileUploadHandler}
               />
               <input
                 type="button"
