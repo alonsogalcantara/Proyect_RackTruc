@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div>
       <HeaderPagina/>
-     <RegistrarUsuario/>
+      <RegistrarUsuario/>
     </div>
   );
 }
