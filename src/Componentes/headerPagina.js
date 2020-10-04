@@ -10,7 +10,6 @@ class headerPagina extends React.Component{
         this.nameHandler = this.nameHandler.bind(this);
     }
 
-
     nameHandler(event) {
         this.setState({ name: event.target.value });
     }
