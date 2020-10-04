@@ -211,7 +211,7 @@ class registrarUsuario extends React.Component {
               />
             </label>
           </fieldset>
-          <AlertButton/>
+          <AlertButton />
           <input type="button" className="button-cancelar" value="Cancelar" />
         </form>
       </div>
