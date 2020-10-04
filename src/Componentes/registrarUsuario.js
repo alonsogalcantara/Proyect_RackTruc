@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 //Extras
 //import validate from "../helpers/validation";
+import AlertButton from '../helpers/alertButton'
 
 class registrarUsuario extends React.Component{
 
