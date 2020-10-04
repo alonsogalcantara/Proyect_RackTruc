@@ -1,19 +1,21 @@
 import React from "react";
 import { useAlert } from "react-alert";
+import '../style.css';
 
 const AlertButton = () => {
     
   const alert = useAlert();
 
   return (
-    <button
-      onClick={(e) => {
+    <input
+        type='button'
+        className="button"
+        value='Registrar'
+        onClick={(e) => {
         e.preventDefault();
-        alert.show("Oh look, an alert!");
-      }}
-    >
-      Show Alert
-    </button>
+        alert.show("Nuevo usuario registrado");
+        }}
+    />
   );
 };
 

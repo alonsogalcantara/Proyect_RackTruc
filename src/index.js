@@ -3,10 +3,14 @@ import './style.css';
 import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from './serviceWorker';
+import { transitions, positions, Provider as AlertProvider } from "react-alert";
+import AlertTemplate from "react-alert-template-basic";
 
 ReactDOM.render(
-    <App/>,
-  document.getElementById('root')
+  <AlertProvider template={AlertTemplate}>
+    <App />
+  </AlertProvider>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
