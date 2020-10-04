@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.css';
 import HeaderPagina from './Componentes/headerPagina'
 import RegistrarUsuario from './Componentes/registrarUsuario';
 
