@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 
 //Extras
-import AlertButton from '../helpers/alertButton'
+import AlertButton from "../helpers/alertButton";
 
 class registrarUsuario extends React.Component {
   constructor(props) {

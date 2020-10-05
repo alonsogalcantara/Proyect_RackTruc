@@ -4,6 +4,7 @@ import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
+import '../style.css'
 
 //recibe datos camionero
 function RdatosCamionero(Nombre, Apellidos, Edad, Direccion, Clave) {
@@ -30,14 +31,14 @@ export default function DatosCamionero() {
       <form>
         <fieldset>
           <legend>
-            <span className="number">1</span>INFORMACION DEL CAMIONERO
+            <span className="number">1</span>Informaci&oacute; camionero
           </legend>
 
           <div className="detallesCamionero">
             <img
               src="https://okdiario.com/img/motor/2016/03/Camion.jpg"
               style={{ height: 100, width: 100 }}
-              alt='Imagen camion'
+              alt="Imagen camion"
             />
 
             <Table width="10px" height="5px" border="3px">
@@ -79,7 +80,9 @@ export default function DatosCamionero() {
             </Table>
           </div>
 
-          <h2>CAMIONERO</h2>
+          <legend style={{ margin: 10 }}>
+            <span className="number">2</span>Camionero
+          </legend>
           <Table width="10px" height="5px" border="3px">
             <TableHead>
               <TableRow>
@@ -150,16 +153,25 @@ export default function DatosCamionero() {
             </Table>
           </fieldset>
 
-          <div display="flex" justify-content="left">
-            <button type="button" aling="left">
-              Ventas
-            </button>
-            <button type="button" aling="center">
-              Editar usuario
-            </button>
-            <button type="button" aling="right">
-              Eliminar usuario
-            </button>
+          <div className="butonsDetalles">
+            <input
+              type="button"
+              className="botonDetalles"
+              id="venta"
+              value="Ventas"
+            />
+            <input
+              type="button"
+              className="botonDetalles"
+              id="detalle"
+              value="Editar usuario"
+            />
+            <input
+              type="button"
+              className="botonDetalles"
+              id="elimina"
+              value="Eliminar usuario"
+            />
           </div>
         </fieldset>
       </form>

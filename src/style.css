@@ -88,6 +88,29 @@
     border-radius: 15px 15px 15px 0px;
 }
 
+.form-style-5 div[class="butonsDetalles"] {
+    display: flex;
+    background: #e6e2e2d2;
+    justify-content: space-around;
+}
+
+.form-style-5 div input[class="botonDetalles"] {
+  background: rgb(3, 31, 37);
+  color: white;
+}
+
+.form-style-5 div input[id="venta"]:hover {
+    background: #106291;
+}
+
+.form-style-5 div input[id="detalle"]:hover {
+    background: #b8b514;
+}
+
+.form-style-5 div input[id="elimina"]:hover {
+    background: #ac180d;
+}
+
 .form-style-5 input[type="submit"],
 .form-style-5 input[type="button"] {
     position: relative;
