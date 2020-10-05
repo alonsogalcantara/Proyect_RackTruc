@@ -12,66 +12,92 @@ function RdatosCamionero(Nombre, Apellidos, Edad, Direccion, Clave) {
 
 //tabla con datos Camionero
 const DCamionero = [
-  RdatosCamionero('Roberto', 'Hernandez',32,'homero 1003',1)
+  RdatosCamionero("Roberto", "Hernandez", 32, "homero 1003", 1),
 ];
 
 //recibe datos de el camion
-function RdatosCamion(Camion,Marca,Placas, Licencia) {
+function RdatosCamion(Camion, Marca, Placas, Licencia) {
   return { Camion, Marca, Placas, Licencia };
 }
 
 //tabla con datos de el Camion
-const DCamion = [
-  RdatosCamion('trailer', 'nissan',"1knsi1",10273)
-];
+const DCamion = [RdatosCamion("trailer", "nissan", "1knsi1", 10273)];
 
 //exportamos la funcion para que pueda ser usada en la clase APP
 export default function DatosCamionero() {
+  return (
+    <div className="form-style-5">
+      <form>
+        <fieldset>
+          <legend>
+            <span className="number">1</span>INFORMACION DEL CAMIONERO
+          </legend>
 
-  return <div className = "form-style-5" >
-    <form>
-      <fieldset>
-        <legend><span className="number">1</span>INFORMACION DEL CAMIONERO</legend>
-       
-        <div className="detallesCamionero">
-        <img src="https://okdiario.com/img/motor/2016/03/Camion.jpg" style={{height:100, width: 100}}/>
+          <div className="detallesCamionero">
+            <img
+              src="https://okdiario.com/img/motor/2016/03/Camion.jpg"
+              style={{ height: 100, width: 100 }}
+              alt='Imagen camion'
+            />
 
-        <Table width="10px" height="5px" BORDER="3px">
-            <TableHead>
-              <TableRow>
-                <TableCell width="10" height="5">CAMION</TableCell>
-                <TableCell width="10" height="5" align="center">MARCA&nbsp;</TableCell>
-                <TableCell width="10" height="5" align="center">PLACAS&nbsp;</TableCell>
-                <TableCell width="10" height="5" align="center">LICENCIA DE CONDUCIR&nbsp;</TableCell>
-              </TableRow>
-            </TableHead>
-
-            <TableBody width="10px">
-              {DCamion.map((row) => (
-                <TableRow key={row.Camion}>
-                  <TableCell component="th" scope="row">
-                    {row.Camion}
+            <Table width="10px" height="5px" border="3px">
+              <TableHead>
+                <TableRow>
+                  <TableCell width="10" height="5">
+                    CAMION
                   </TableCell>
-                  <TableCell width="10" height="5" align="left">{row.Marca}</TableCell>
-                  <TableCell width="10" height="5" align="center">{row.Placas}</TableCell>
-                  <TableCell width="10" height="5" align="left">{row.Licencia}</TableCell>
+                  <TableCell width="10" height="5" align="center">
+                    MARCA&nbsp;
+                  </TableCell>
+                  <TableCell width="10" height="5" align="center">
+                    PLACAS&nbsp;
+                  </TableCell>
+                  <TableCell width="10" height="5" align="center">
+                    LICENCIA DE CONDUCIR&nbsp;
+                  </TableCell>
                 </TableRow>
-              ))}
-            </TableBody>
+              </TableHead>
 
-          </Table>
+              <TableBody width="10px">
+                {DCamion.map((row) => (
+                  <TableRow key={row.Camion}>
+                    <TableCell component="th" scope="row">
+                      {row.Camion}
+                    </TableCell>
+                    <TableCell width="10" height="5" align="left">
+                      {row.Marca}
+                    </TableCell>
+                    <TableCell width="10" height="5" align="center">
+                      {row.Placas}
+                    </TableCell>
+                    <TableCell width="10" height="5" align="left">
+                      {row.Licencia}
+                    </TableCell>
+                  </TableRow>
+                ))}
+              </TableBody>
+            </Table>
+          </div>
 
-        </div>
-
-      <h2>CAMIONERO</h2>
-          <Table width="10px" height="5px" BORDER="3px">
+          <h2>CAMIONERO</h2>
+          <Table width="10px" height="5px" border="3px">
             <TableHead>
               <TableRow>
-                <TableCell width="10" height="5">NOMBRE</TableCell>
-                <TableCell width="10" height="5" align="center">APELLIDOS&nbsp;</TableCell>
-                <TableCell width="10" height="5" align="center">EDAD&nbsp;</TableCell>
-                <TableCell width="10" height="5" align="center">DIRECCION&nbsp;</TableCell>
-                <TableCell width="10" height="5" align="center">CLAVE&nbsp;</TableCell>
+                <TableCell width="10" height="5">
+                  NOMBRE
+                </TableCell>
+                <TableCell width="10" height="5" align="center">
+                  APELLIDOS&nbsp;
+                </TableCell>
+                <TableCell width="10" height="5" align="center">
+                  EDAD&nbsp;
+                </TableCell>
+                <TableCell width="10" height="5" align="center">
+                  DIRECCION&nbsp;
+                </TableCell>
+                <TableCell width="10" height="5" align="center">
+                  CLAVE&nbsp;
+                </TableCell>
               </TableRow>
             </TableHead>
 
@@ -81,18 +107,24 @@ export default function DatosCamionero() {
                   <TableCell component="th" scope="row">
                     {row.Nombre}
                   </TableCell>
-                  <TableCell width="10" height="5" align="left">{row.Apellidos}</TableCell>
-                  <TableCell width="10" height="5" align="center">{row.Edad}</TableCell>
-                  <TableCell width="10" height="5" align="left">{row.Direccion}</TableCell>
-                  <TableCell width="10" height="5" align="center">{row.Clave}</TableCell>
+                  <TableCell width="10" height="5" align="left">
+                    {row.Apellidos}
+                  </TableCell>
+                  <TableCell width="10" height="5" align="center">
+                    {row.Edad}
+                  </TableCell>
+                  <TableCell width="10" height="5" align="left">
+                    {row.Direccion}
+                  </TableCell>
+                  <TableCell width="10" height="5" align="center">
+                    {row.Clave}
+                  </TableCell>
                 </TableRow>
               ))}
             </TableBody>
-
           </Table>
 
           <fieldset>
-
             <Table>
               <TableHead>
                 <TableRow>
@@ -105,7 +137,7 @@ export default function DatosCamionero() {
 
               <TableBody>
                 {DCamionero.map((row) => (
-                  <TableRow key={row.name}>
+                  <TableRow key={row.Nombre}>
                     <TableCell component="th" scope="row">
                       {row.Nombre}
                     </TableCell>
@@ -116,22 +148,21 @@ export default function DatosCamionero() {
                 ))}
               </TableBody>
             </Table>
+          </fieldset>
 
-        </fieldset>
-
-
-
-        <div display="flex" justify-content="left">
-          <button type="button" aling="left">Ventas</button>
-          <button type="button" aling="center">Editar usuario</button>
-          <button type="button" aliing="right">Eliminar usuario</button>
+          <div display="flex" justify-content="left">
+            <button type="button" aling="left">
+              Ventas
+            </button>
+            <button type="button" aling="center">
+              Editar usuario
+            </button>
+            <button type="button" aling="right">
+              Eliminar usuario
+            </button>
           </div>
-
         </fieldset>
-
-
       </form>
-
-
-  </div>
+    </div>
+  );
 }
