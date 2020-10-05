@@ -18,24 +18,29 @@ class HeaderPagina extends React.Component {
 
   render() {
     return (
-      <div className="header-style">
+      <div className="barraBuscadora">
         <form>
-          <div id="searchform">
-            <img
-              style={{ height: 50, width: 50 }}
-              hspace="25"
-              alt="Logo empresa"
-            />
+          <div class="field" id="searchform">
+            <img style={{ height: 30, width: 30 }} hspace="25" />
             <input
               type="text"
               id="Busqueda"
               placeholder=""
               style={{ height: 20, width: 300 }}
-            />
+            />{" "}
             <button type="button" id="Buscar">
               BUSCAR
             </button>
-          </div>
+            <text>ID</text>
+            <text>/</text>
+            <text>Nombre</text>
+            <text>/</text>
+            <text>Fecha</text>
+          </div>{" "}
+          <script
+            class="cssdeck"
+            src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"
+          ></script>
         </form>
       </div>
     );
