@@ -4,16 +4,22 @@
 
 .header-style {
     background-color: #6cc7e6;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: space-evenly;
     margin: 10px auto;
     padding: 20px;
-    border-radius: 8px;
-    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .header-style div[id='searchform']{
     background-color: #7aceeb;
-    display: flex;
-    justify-content: space-evenly;
+
+}
+
+.logoImagen{
+    width: 75px;
+    height: 75px;
+    margin-left: -110px;
 }
 
 /***********************
@@ -58,9 +64,7 @@
     box-sizing: content-box;
     height: 60px;
     padding: 0 46px 0 10px;
-    border-color: #888;
-    border-radius: 35px;
-    /* (height/2) + border-width */
+    border-color: #000;
     border-style: solid;
     border-width: 5px;
     margin-top: 15px;
@@ -85,7 +89,7 @@
     margin-right: 5px;
     /* border-width */
     background: transparent;
-    color: #888;
+    color: #000;
     font-family: 'Helvetica', sans-serif;
     font-size: 40px;
     line-height: 60px;
@@ -106,24 +110,9 @@
 }
 
 ::-webkit-input-placeholder {
-    color: #888;
+    color: #000;
 }
 
 input:-moz-placeholder {
-    color: #888
-}
-
-
-/****************
- * Pretify demo *
- ****************/
-.h1 {
-    float: left;
-    margin: 25px;
-    color: #333;
-    font-family: 'Helvetica', sans-serif;
-    font-size: 45px;
-    font-weight: bold;
-    line-height: 45px;
-    text-align: center;
+    color: #000
 }

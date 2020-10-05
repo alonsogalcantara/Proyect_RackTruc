@@ -19,23 +19,24 @@ class HeaderPagina extends React.Component {
   render() {
     return (
       <div className="header-style">
+        <form>
           <div id="searchform">
             <img
               style={{ height: 50, width: 50 }}
               hspace="25"
               alt="Logo empresa"
             />
-            <div className="flexsearch">
-              <div className="flexsearch--wrapper">
-                <form className="flexsearch--form">
-                  <div className="flexsearch--input-wrapper">
-                    <input className="flexsearch--input" type="search" placeholder="Buscar" />
-                  </div>
-                  <input className="flexsearch--submit" type="submit" value="&#10140;"/>
-                </form>
-              </div>
-            </div>
+            <input
+              type="text"
+              id="Busqueda"
+              placeholder=""
+              style={{ height: 20, width: 300 }}
+            />
+            <button type="button" id="Buscar">
+              BUSCAR
+            </button>
           </div>
+        </form>
       </div>
     );
   }
