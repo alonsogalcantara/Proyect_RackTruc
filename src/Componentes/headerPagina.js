@@ -1,4 +1,7 @@
 import React from "react";
+import '../headerStyle.css'
+
+//import lupa from "https://img.lovepik.com/element/40019/4439.png_300.png";
 class HeaderPagina extends React.Component {
   constructor() {
     super();
@@ -15,29 +18,24 @@ class HeaderPagina extends React.Component {
 
   render() {
     return (
-      <div className="barraBuscadora">
-        <form>
-          <div className="field" id="searchform">
+      <div className="header-style">
+          <div id="searchform">
             <img
-              style={{ height: 30, width: 30 }}
+              style={{ height: 50, width: 50 }}
               hspace="25"
               alt="Logo empresa"
             />
-            <input
-              type="text"
-              id="Busqueda"
-              placeholder=""
-              style={{ height: 20, width: 300 }}
-            />
-            <button type="button" id="Buscar">
-              BUSCAR
-            </button>
+            <div className="flexsearch">
+              <div className="flexsearch--wrapper">
+                <form className="flexsearch--form">
+                  <div className="flexsearch--input-wrapper">
+                    <input className="flexsearch--input" type="search" placeholder="Buscar" />
+                  </div>
+                  <input className="flexsearch--submit" type="submit" value="&#10140;"/>
+                </form>
+              </div>
+            </div>
           </div>
-          <script
-            className="cssdeck"
-            src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"
-          ></script>
-        </form>
       </div>
     );
   }
