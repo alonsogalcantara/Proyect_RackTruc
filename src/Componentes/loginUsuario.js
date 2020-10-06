@@ -1,88 +1,91 @@
-import React, { useState } from 'react';
-import '../style.css'
+import React from "react";
+import "../style.css";
 
-const Label = ({ text }) => {
+class LoginUsuario extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      form: {
+        usuario: {
+          id: "usuario",
+          name: "usuario",
+          type: "text",
+          placeholder: "Ingrese nombre de usuario",
+          value: "",
+        },
+        password: {
+          id: "password",
+          name: "password",
+          type: "text",
+          placeholder: "Ingrese contraseña",
+          value: "",
+        },
+      },
+    };
+    this.formHandler = this.formHandler.bind(this);
+    this.handleSumbit = this.handleSumbit.bind(this);
+  }
+
+  handleSumbit() {
+    this.setState({ value: this.state.form.usuario.value });
+    this.setState({ value: this.state.form.password.value });
+    
+    const usuari = this.state.form.usuario.value;
+    const contra = this.state.form.password.value;
+
+    if(usuari === 'admin' && contra === '1234'){
+        console.log("Logeado");
+    }else{
+        console.log("No logeado");
+    }
+  }
+
+  /**
+   * form
+   */
+  formHandler(event) {
+    const { name, value } = event.target;
+
+    this.setState((state, props) => ({
+      form: {
+        ...state.form,
+        [name]: {
+          ...state.form[name],
+          value,
+        },
+      },
+    }));
+  }
+
+  render() {
     return (
-        <div>
-            <label> {text} </label>
-        </div>
-    )
-};
-
-const Input = ({ atribute, handleChange, param }) => {
-    return(
-        <div>
-            <input 
-            id={atribute.id}
-            name={atribute.name}
-            placeholder={atribute.placeholder}
-            type={atribute.type}
-            onChange={ (e) => handleChange(e.target.name, e.target.value)}
-            className='regular-style'
-            />
-        </div>
-    )
-};
-
-const Title = () => {
-    return (
+      <div className="login-container">
         <div className="form-style-5">
-        <legend>
-            <span className="number"></span>Iniciar sesión
-        </legend>
+          <legend>
+            <h1>Iniciar sesión</h1>
+          </legend>
         </div>
-    )
-};
 
-
-
-const LoginUsuario = () => {
-    const [ user, setUser ] = useState('');
-    const [ password, setPassword ] = useState('');
-
-    function handleChange(name, value){
-        if (name == 'usuario'){
-            setUser(value)
-        }else {
-            setPassword(value)
-        }
-    }
-
-    function handleSumbit(){
-        let account = { user, password }
-        if(account) {
-            console.log('account', account)
-        }
-    }
-
-    return (
-        <div className="login-container">
-            <Title />
-            <Label text='Usuario'/>
-            <Input 
-            atribute={{
-                id: 'usuario',
-                name: 'usuario',
-                type: 'text',
-                placeholder: 'Ingrese nombre de usuario'
-            }}
-            handleChange={handleChange}
-            />
-            <Label text='Contraseña'/>
-            <Input 
-            atribute={{
-                id: 'contraseña',
-                name: 'contraseña',
-                type: 'password',
-                placeholder: 'Ingrese su contraseña'
-            }}
-            handleChange={handleChange}
-            />
-            <button onClick={handleSumbit}>
-                Aceptar
-            </button>
-        </div>
-    )   
-};
+        <form onChange={this.formHandler}>
+          <label text="Usuario" />
+          <input
+            id={this.state.form.usuario.id}
+            name={this.state.form.usuario.name}
+            type={this.state.form.usuario.type}
+            placeholder={this.state.form.usuario.placeholder}
+          />
+          <label text="Contraseña" />
+          <input
+            id={this.state.form.password.id}
+            name={this.state.form.password.name}
+            type={this.state.form.password.type}
+            placeholder={this.state.form.password.placeholder}
+          />
+        </form>
+        <button onClick={this.handleSumbit}>Aceptar</button>
+      </div>
+    );
+  }
+}
 
 export default LoginUsuario;
