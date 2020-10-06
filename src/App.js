@@ -1,15 +1,14 @@
 import React from 'react';
-import './App.css';
-
-function App() {
+import HeaderPagina from './Componentes/headerPagina'
+//import RegistrarUsuario from './Componentes/registrarUsuario';
+import DetallesCamionero from './Componentes/detallesCamionero';
+import DetallesCamion from './Componentes/detallesCamion';
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Aqui va todo</h1>
-        <p>Agrego mi rama</p>
-      </header>
+    <div>
+      <HeaderPagina/>
+      <DetallesCamionero/>
+      <DetallesCamion/>
     </div>
   );
 }
-
-export default App;

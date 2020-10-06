@@ -38,7 +38,7 @@
 .form-style-5 textarea,
 .form-style-5 select {
     font-family: Georgia, "Times New Roman", Times, serif;
-    background: rgba(235, 216, 216, 0.486);
+    background: rgb(148, 101, 101);
     border: none;
     border-radius: 4px;
     font-size: 15px;
@@ -50,7 +50,7 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     background-color: #e8eeef;
-    color: #7791a3;
+    color: #20262a;
     -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     margin-bottom: 30px;
@@ -86,6 +86,29 @@
     text-align: center;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
     border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 div[class="butonsDetalles"] {
+    display: flex;
+    background: #e6e2e2d2;
+    justify-content: space-around;
+}
+
+.form-style-5 div input[class="botonDetalles"] {
+  background: rgb(3, 31, 37);
+  color: white;
+}
+
+.form-style-5 div input[id="venta"]:hover {
+    background: #106291;
+}
+
+.form-style-5 div input[id="detalle"]:hover {
+    background: #b8b514;
+}
+
+.form-style-5 div input[id="elimina"]:hover {
+    background: #ac180d;
 }
 
 .form-style-5 input[type="submit"],
@@ -127,22 +150,41 @@
     margin-bottom: 10px;
 }
 
+
+.field {
+    max-width: 1500px;
+    padding: 10px 20px;
+    background: #08b4ee;
+    margin: 1px auto;
+    padding: 1px;
+    background: #66a1b4;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    
+}
+
+.field>button {
+    padding:0.6em 0.8em;
+    background-color:rgb(0, 0, 0);
+    color:white;
+    border:none;
+  }
+  .field>input[type=text] {
+    flex:1;
+    padding:0.6em;
+    border:0.2em solid rgb(0, 0, 0);
+  }
+
 /*
  * File
- */
+
 
 .file {
     position: relative;
     display: inline-block;
     cursor: pointer;
     height: 2.5rem;
-}
-
-.file input {
-    min-width: 14rem;
-    margin: 0;
-    filter: alpha(opacity=0);
-    opacity: 0;
 }
 
 .file-custom {
@@ -165,10 +207,6 @@
     user-select: none;
 }
 
-.file-custom:after {
-    content: "Choose file...";
-}
-
 .file-custom:before {
     position: absolute;
     top: -.075rem;
@@ -186,7 +224,71 @@
     border-radius: 0 .25rem .25rem 0;
 }
 
+*/
+
 /* Focus */
 .file input:focus~.file-custom {
     box-shadow: 0 0 0 .075rem #fff, 0 0 0 .2rem #0074d9;
+}
+
+/*Files*/
+
+.file input {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    padding: 120px 0px 85px 35%;
+    text-align: center !important;
+    margin: 0;
+    width: 65%
+}
+
+.file input:focus {
+    outline: 2px dashed #92b0b3;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    transition: outline-offset .15s ease-in-out, background-color .15s linear;
+    border: 1px solid #92b0b3;
+}
+
+.file {
+    position: relative
+}
+
+.file:after {
+    pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 50px;
+    right: 0;
+    height: 56px;
+    content: "";
+    background-image: url(https://image.flaticon.com/icons/png/128/109/109612.png);
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.color input {
+    background-color: #f1f1f1;
+}
+
+.file:before {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    right: 0;
+    height: 37px;
+    content: " or drag it here. ";
+    display: block;
+    margin: 0 auto;
+    color: #2ea591;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-align: center;
 }
