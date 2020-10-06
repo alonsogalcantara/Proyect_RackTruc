@@ -50,12 +50,12 @@ export default function DatosCamionero() {
       <form>
         <fieldset>
           <legend>
-            <span className="number">1</span>Informaci&oacute; camionero
+            <span className="number">1</span>Informaci&oacute;n camionero
           </legend>
 
           <div className="detallesCamionero">
             <img
-              src="https://okdiario.com/img/motor/2016/03/Camion.jpg"
+              src="https://media.istockphoto.com/vectors/ethnic-diversity-group-of-people-drawing-vector-id888882708"
               style={{ height: 100, width: 100 }}
               alt="Imagen camion"
             />

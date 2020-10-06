@@ -1,12 +1,11 @@
 import React from 'react';
 import HeaderPagina from './Componentes/headerPagina'
-import DetallesCamionero from './Componentes/detallesCamionero';
-
+import DetallesCamion from './Componentes/detallesCamion';
 export default function App() {
   return (
     <div>
       <HeaderPagina/>
-      <DetallesCamionero/>
+      <DetallesCamion/>
     </div>
   );
 }
