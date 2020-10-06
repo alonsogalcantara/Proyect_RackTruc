@@ -108,10 +108,16 @@ class registrarUsuario extends React.Component {
     let size = 30000;
     let err = "";
     console.log(file.size);
+
     if (file.size > size) {
       err = file.type + "is too large, please pick a smaller file\n";
       toast.error(err);
     }
+    else if (!file) {
+      err = file.type + "There is no file founded\n";
+      toast.error(err);
+    }
+    
     return true;
   };
 

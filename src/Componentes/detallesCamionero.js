@@ -7,6 +7,24 @@ import TableRow from "@material-ui/core/TableRow";
 
 import "../Camionero.css";
 
+function clickVentas(){
+  console.log('====================================');
+  console.log('Diste click en ventas!');
+  console.log('====================================');
+}
+
+function clickEditarUsuario() {
+  console.log("====================================");
+  console.log("Diste click en editar usuario!");
+  console.log("====================================");
+}
+
+function clickEliminarUsuario() {
+  console.log("====================================");
+  console.log("Diste click en eliminar usuario!");
+  console.log("====================================");
+}
+
 //recibe datos camionero
 function RdatosCamionero(Nombre, Apellidos, Edad, Direccion, Clave) {
   return { Nombre, Apellidos, Edad, Direccion, Clave };
@@ -165,18 +183,21 @@ export default function DatosCamionero() {
               className="botonDetalles"
               id="venta"
               value="Ventas"
+              onClick={clickVentas}
             />
             <input
               type="button"
               className="botonDetalles"
               id="detalle"
               value="Editar usuario"
+              onClick={clickEditarUsuario}
             />
             <input
               type="button"
               className="botonDetalles"
               id="elimina"
               value="Eliminar usuario"
+              onClick={clickEliminarUsuario}
             />
           </div>
         </fieldset>
