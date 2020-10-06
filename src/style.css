@@ -243,14 +243,9 @@
     text-align: center;
 }
 
-/*
- * Estilos de header
- */
-
- .header-style{
-         padding: 10px 20px;
-         background: #f4f7f8;
-         margin: 10px auto;
-         background: #c300ff;
-         border-radius: 5px;
- }
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
