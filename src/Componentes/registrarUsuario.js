@@ -71,13 +71,13 @@ class registrarUsuario extends React.Component{
                         <input type="email" value={this.state.email} onChange={this.emailHandler} name="CorreE" placeholder="Correo electr&oacute;nico" />
                         <input type="text" value={this.state.telec} onChange={this.telecHandler} name="TeleC" placeholder="Tel&eacute;fono celular" />
                         <input type="date" value={this.state.fechan}  onChange={this.fechanHandler} name="FechNa" placeholder="Fecha de nacimiento" />
-                        
+
                         <p>Elige un archivo</p>
                         <label className="file">
                             <input type="file" className="custom-file-input" name="adjunto" accept=".pdf, .jpg, .png" multiple />
                             <span className="file-custom"></span>
                         </label>
-                        
+
                         <label htmlFor="Tipo de usuario" > <h2>Tipo de usuario </h2></label >
                         <select id="tipoUsuario" name="tipoUsuario">
                             <optgroup>
@@ -86,7 +86,7 @@ class registrarUsuario extends React.Component{
                                 <option value="boxing">Vendedor</option>
                             </optgroup>
 
-                        </select>      
+                        </select>
                     </fieldset>
 
                     <fieldset>
