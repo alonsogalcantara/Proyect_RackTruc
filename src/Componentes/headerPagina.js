@@ -1,5 +1,5 @@
 import React from "react";
-import '../headerStyle.css'
+import '../Styles/headerStyle.css'
 
 //import lupa from "https://img.lovepik.com/element/40019/4439.png_300.png";
 class HeaderPagina extends React.Component {
