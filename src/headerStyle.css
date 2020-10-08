@@ -1,0 +1,23 @@
+/*
+ * Form-style-5
+ */
+
+.header-style {
+    background-color: #3c9ebe;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.header-style div[id='searchform']{
+    background-color: #5aafcc;
+
+}
+
+.logoImagen{
+    width: 75px;
+    height: 75px;
+    margin-left: -110px;
+}

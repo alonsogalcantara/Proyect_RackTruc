@@ -1,0 +1,175 @@
+/*
+ * Form-style-5
+ */
+
+.detailStyle {
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.detailStyle fieldset {
+    border: none;
+}
+
+.detailStyle legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.detailStyle label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.detailStyle input[type="text"],
+.detailStyle input[type="date"],
+.detailStyle input[type="datetime"],
+.detailStyle input[type="email"],
+.detailStyle input[type="number"],
+.detailStyle input[type="search"],
+.detailStyle input[type="time"],
+.detailStyle input[type="url"],
+.detailStyle textarea,
+.detailStyle select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgb(148, 101, 101);
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color: #20262a;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+.detailStyle input[type="text"]:focus,
+.detailStyle input[type="date"]:focus,
+.detailStyle input[type="datetime"]:focus,
+.detailStyle input[type="email"]:focus,
+.detailStyle input[type="number"]:focus,
+.detailStyle input[type="search"]:focus,
+.detailStyle input[type="time"]:focus,
+.detailStyle input[type="url"]:focus,
+.detailStyle textarea:focus,
+.detailStyle select:focus {
+    background: #e1e5e7;
+}
+
+.detailStyle select {
+    -webkit-appearance: menulist-button;
+    height: 35px;
+}
+
+.detailStyle .number {
+    background: #0d1855;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.detailStyle div[class="butonsDetalles"] {
+    display: flex;
+    background: #e6e2e2d2;
+    justify-content: space-around;
+}
+
+.detailStyle div input[class="botonDetalles"] {
+    background: rgb(3, 31, 37);
+    color: white;
+}
+
+.detailStyle div input[id="venta"]:hover {
+    background: #106291;
+}
+
+.detailStyle div input[id="detalle"]:hover {
+    background: #b8b514;
+}
+
+.detailStyle div input[id="elimina"]:hover {
+    background: #ac180d;
+}
+
+.detailStyle input[type="submit"],
+.detailStyle input[type="button"] {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #0d1855;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+
+.detailStyle input[type="submit"]:hover,
+.detailStyle input[type="button"]:hover,
+.detailStyle input[class="button-cancelar"]:hover {
+    background: #109177;
+}
+
+.detailStyle input[class="button-cancelar"] {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    margin: 0 auto;
+    background: #380404d2;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+
+.field {
+    max-width: 1500px;
+    padding: 10px 20px;
+    background: #08b4ee;
+    margin: 1px auto;
+    padding: 1px;
+    background: #66a1b4;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+
+}
+
+.field>button {
+    padding: 0.6em 0.8em;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+}
+
+.field>input[type=text] {
+    flex: 1;
+    padding: 0.6em;
+    border: 0.2em solid rgb(0, 0, 0);
+}

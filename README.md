@@ -1,7 +1,19 @@
 # Project Rack Truk
-> Este projecto es de ámbito estudiantil, desarrollado por alumnos del [Instituto Leornado Bravo](https://ilb.mx/).
+> Este projecto es de ámbito estudiantil, desarrollado por alumnos del [Instituto Leonardo Bravo](https://ilb.mx/).
 
 ## Importante
+
+Para el uso correcto de este software se debe de instalar los siguientes componentes.
+
+### `npm install @material-ui/core`
+### `npm install bootstrap`
+### `npm install react-toastify`
+### `npm install axios`
+### `npm install --save react-alert`
+### `npm install --save react-alert react-alert-template-basic`
+
+## Esta seccion la da react.
+> Se deja para posteriores usos
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
