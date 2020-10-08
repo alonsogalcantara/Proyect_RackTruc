@@ -11,6 +11,7 @@ Para el uso correcto de este software se debe de instalar los siguientes compone
 ### `npm install axios`
 ### `npm install --save react-alert`
 ### `npm install --save react-alert react-alert-template-basic`
+### `npm install react-router-dom`
 
 ## Esta seccion la da react.
 > Se deja para posteriores usos
