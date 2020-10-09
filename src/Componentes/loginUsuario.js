@@ -36,7 +36,7 @@ class LoginUsuario extends React.Component {
 
     if (usuari === "admin" && contra === "1234") {
       console.log("Logeado");
-      this.nextPath("/detallesCamionero");
+      this.nextPath("/mainAdmin");
     } else {
       console.log("No logeado");
     }

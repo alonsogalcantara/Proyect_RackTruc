@@ -1,11 +1,13 @@
 import React from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
+import { withRouter } from "react-router-dom";
 
 //Extras
 import AlertButton from "../helpers/alertButton";
 
 class registrarUsuario extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -121,6 +123,10 @@ class registrarUsuario extends React.Component {
     return true;
   };
 
+  toHome(path){
+    this.props.history.push(path);
+  }
+
   /**
    * form
    */
@@ -218,11 +224,19 @@ class registrarUsuario extends React.Component {
             </label>
           </fieldset>
           <AlertButton />
-          <input type="button" className="button-cancelar" value="Cancelar" />
+          <input
+            type="button"
+            className="button-cancelar"
+            value="Cancelar"
+            onClick={() => {
+              this.props.history.push('/mainAdmin');
+              ;
+            }}
+          />
         </form>
       </div>
     );
   }
 }
 
-export default registrarUsuario;
+export default withRouter(registrarUsuario);
