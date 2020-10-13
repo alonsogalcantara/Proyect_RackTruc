@@ -4,7 +4,11 @@ import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
+<<<<<<< HEAD
 import "../detallesCamion.css";
+=======
+import '../Styles/style.css'
+>>>>>>> f06ef60998b17fd2d74ede44f1349b5e9cd4eb79
 
 //recibe datos camionero
 function RdatosCamion(Camiones, Marcas, Placas, Modelos, Capacidad) {

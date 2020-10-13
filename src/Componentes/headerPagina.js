@@ -1,12 +1,36 @@
 import React from "react";
+import '../Styles/headerStyle.css'
+
+//import lupa from "https://img.lovepik.com/element/40019/4439.png_300.png";
 class HeaderPagina extends React.Component {
   constructor() {
     super();
     this.state = {
       name: "",
+      label: {
+        nombre: "Funalito",
+        id: "007",
+        fecha: "",
+      },
     };
 
     this.nameHandler = this.nameHandler.bind(this);
+  }
+
+  getDate() {
+    var tempDate = new Date();
+    var date =
+      tempDate.getFullYear() +
+      "-" +
+      (tempDate.getMonth() + 1) +
+      "-" +
+      tempDate.getDate();
+    return date;
+  }
+
+  clickBuscar(event) {
+    const item = { name: event.target.value };
+    console.log("Clickeaste en buscar " + item);
   }
 
   nameHandler(event) {
@@ -26,12 +50,25 @@ class HeaderPagina extends React.Component {
             <input
               type="text"
               id="Busqueda"
-              placeholder=""
+              placeholder="Buscar..."
               style={{ height: 20, width: 300 }}
+              name={this.state.name}
+              onChange={this.nameHandler}
             />
-            <button type="button" id="Buscar">
+            <button type="button" id="Buscar" onClick={this.clickBuscar}>
               BUSCAR
             </button>
+            <div>
+              <label className="lblNombre" htmlFor="">
+                Nombre: {this.state.label.nombre}
+              </label>
+              <br />
+              <label htmlFor="">ID: {this.state.label.id}</label>
+              <br />
+              <label htmlFor="" id="date">
+                Fecha: {this.state.label.fecha + this.getDate()}
+              </label>
+            </div>
           </div>
           <script
             className="cssdeck"

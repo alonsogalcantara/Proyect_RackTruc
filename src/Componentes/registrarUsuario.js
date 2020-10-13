@@ -1,11 +1,13 @@
 import React from "react";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
+import { withRouter } from "react-router-dom";
 
 //Extras
 import AlertButton from "../helpers/alertButton";
 
 class registrarUsuario extends React.Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -108,12 +110,22 @@ class registrarUsuario extends React.Component {
     let size = 30000;
     let err = "";
     console.log(file.size);
+
     if (file.size > size) {
       err = file.type + "is too large, please pick a smaller file\n";
       toast.error(err);
     }
+    else if (!file) {
+      err = file.type + "There is no file founded\n";
+      toast.error(err);
+    }
+    
     return true;
   };
+
+  toHome(path){
+    this.props.history.push(path);
+  }
 
   /**
    * form
@@ -212,11 +224,19 @@ class registrarUsuario extends React.Component {
             </label>
           </fieldset>
           <AlertButton />
-          <input type="button" className="button-cancelar" value="Cancelar" />
+          <input
+            type="button"
+            className="button-cancelar"
+            value="Cancelar"
+            onClick={() => {
+              this.props.history.push('/mainAdmin');
+              ;
+            }}
+          />
         </form>
       </div>
     );
   }
 }
 
-export default registrarUsuario;
+export default withRouter(registrarUsuario);

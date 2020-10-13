@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import HeaderPagina from "./Componentes/headerPagina";
 //import RegistrarUsuario from './Componentes/registrarUsuario';
@@ -11,3 +12,28 @@ export default function App() {
 		</div>
 	);
 }
+=======
+import React from 'react';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+//src
+import LoginUsuario from './Componentes/loginUsuario';
+import mainAdmin from "./Componentes/mainAdmin";
+import detallesCamionero from "./Componentes/detallesCamionero";
+import detallesCamion from "./Componentes/detallesCamion";
+import registrarUsuario from "./Componentes/registrarUsuario";
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/login" component={LoginUsuario} />
+        <Route exact path="/mainAdmin" component={mainAdmin} />
+        <Route exact path="/detallesCamionero" component={detallesCamionero} />
+        <Route exact path="/detallesCamion" component={detallesCamion} />
+        <Route exact path="/registrarUsuario" component={registrarUsuario} />
+      </Switch>
+    </BrowserRouter>
+  );
+}
+>>>>>>> f06ef60998b17fd2d74ede44f1349b5e9cd4eb79

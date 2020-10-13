@@ -1,10 +1,12 @@
 import React from 'react';
-import './style.css';
+import './Styles/style.css';
 import ReactDOM from "react-dom";
-import App from "./App";
 import * as serviceWorker from './serviceWorker';
 import { Provider as AlertProvider } from "react-alert";
 import AlertTemplate from "react-alert-template-basic";
+
+//src
+import App from "./App";
 
 ReactDOM.render(
   <AlertProvider template={AlertTemplate}>,
