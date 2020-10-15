@@ -1,11 +1,12 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import HeaderPagina from "./headerPagina";
 
 class mainAdmin extends React.Component{
     render (){
         return (
           <div>
-            Hola
+            <HeaderPagina />
             <ul>
               <li>
                 <Link to="/detallesCamionero">Detalles camionero</Link>
