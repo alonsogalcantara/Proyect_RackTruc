@@ -1,5 +1,6 @@
 import React from "react";
 import "../style.css";
+import { withRouter } from "react-router-dom";
 
 class LoginUsuario extends React.Component {
   constructor(props) {
@@ -11,14 +12,14 @@ class LoginUsuario extends React.Component {
           name: "usuario",
           type: "text",
           placeholder: "Ingrese nombre de usuario",
-          value: "",
+          value: "example",
         },
         password: {
           id: "password",
           name: "password",
           type: "text",
           placeholder: "Ingrese contraseña",
-          value: "",
+          value: "exmple",
         },
       },
     };
@@ -29,14 +30,15 @@ class LoginUsuario extends React.Component {
   handleSumbit() {
     this.setState({ value: this.state.form.usuario.value });
     this.setState({ value: this.state.form.password.value });
-    
+
     const usuari = this.state.form.usuario.value;
     const contra = this.state.form.password.value;
 
-    if(usuari === 'admin' && contra === '1234'){
-        console.log("Logeado");
-    }else{
-        console.log("No logeado");
+    if (usuari === "admin" && contra === "1234") {
+      console.log("Logeado");
+      this.nextPath("/detallesCamionero");
+    } else {
+      console.log("No logeado");
     }
   }
 
@@ -55,6 +57,10 @@ class LoginUsuario extends React.Component {
         },
       },
     }));
+  }
+
+  nextPath(path) {
+    this.props.history.push(path);
   }
 
   render() {
@@ -88,4 +94,4 @@ class LoginUsuario extends React.Component {
   }
 }
 
-export default LoginUsuario;
+export default  withRouter(LoginUsuario);
