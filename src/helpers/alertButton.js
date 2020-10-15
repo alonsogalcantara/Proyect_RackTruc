@@ -1,8 +1,9 @@
 import React from "react";
 import { useAlert } from "react-alert";
-import "../style.css";
+import "../Styles/style.css";
+import { withRouter } from "react-router-dom";
 
-const AlertButton = () => {
+const AlertButton = (props) => {
   const alert = useAlert();
 
   return (
@@ -13,9 +14,10 @@ const AlertButton = () => {
       onClick={(e) => {
         e.preventDefault();
         alert.show("Nuevo usuario registrado");
+        props.history.push('/mainAdmin');
       }}
     />
   );
 };
 
-export default AlertButton;
+export default withRouter(AlertButton);

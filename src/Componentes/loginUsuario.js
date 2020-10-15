@@ -1,5 +1,9 @@
 import React from "react";
+<<<<<<< HEAD
 import "../style.css";
+=======
+import "../Styles/style.css";
+>>>>>>> f06ef60998b17fd2d74ede44f1349b5e9cd4eb79
 import { withRouter } from "react-router-dom";
 
 class LoginUsuario extends React.Component {
@@ -36,7 +40,11 @@ class LoginUsuario extends React.Component {
 
     if (usuari === "admin" && contra === "1234") {
       console.log("Logeado");
+<<<<<<< HEAD
       this.nextPath("/detallesCamionero");
+=======
+      this.nextPath("/mainAdmin");
+>>>>>>> f06ef60998b17fd2d74ede44f1349b5e9cd4eb79
     } else {
       console.log("No logeado");
     }
