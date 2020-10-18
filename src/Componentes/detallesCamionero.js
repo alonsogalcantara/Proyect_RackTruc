@@ -4,9 +4,6 @@ import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-<<<<<<< HEAD
-import "../style.css";
-=======
 
 import "../Styles/Camionero.css";
 
@@ -27,7 +24,6 @@ function clickEliminarUsuario() {
   console.log("Diste click en eliminar usuario!");
   console.log("====================================");
 }
->>>>>>> f06ef60998b17fd2d74ede44f1349b5e9cd4eb79
 
 //recibe datos camionero
 function RdatosCamionero(Nombre, Apellidos, Edad, Direccion, Clave) {

@@ -4,11 +4,7 @@ import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
-<<<<<<< HEAD
-import "../detallesCamion.css";
-=======
-import '../Styles/style.css'
->>>>>>> f06ef60998b17fd2d74ede44f1349b5e9cd4eb79
+import '../Styles/Camion.css'
 
 //recibe datos camionero
 function RdatosCamion(Camiones, Marcas, Placas, Modelos, Capacidad) {
@@ -29,7 +25,8 @@ const DCamionLogistica = [RdatosLogistica("Transporto papel","Puebla", "Mexico",
 class detallesCamion extends React.Component {
   render() {
     return (
-      <div className="form-style-5">
+      <div className="Estilo_Camion">
+        
         <form>
           <fieldset>
             <legend>
@@ -38,14 +35,17 @@ class detallesCamion extends React.Component {
             <legend style={{ margin: 10 }}>
               <center>Caracteristicas del camión</center>
             </legend>
+            <img
+              type="img"
+              id="Img_No1"
+              src="https://okdiario.com/img/motor/2016/03/Camion.jpg"
+              alt="Imagen camion"
+              width="100"
+              height="100"
+              align="center"
+            />            
 
-            <div className="detallesCamion">
-              <img
-                src="https://okdiario.com/img/motor/2016/03/Camion.jpg"
-                style={{ height: 100, width: 100 }}
-                alt="Imagen camion"
-              />
-
+            <div className="Tbl_Camion">
               <Table width="10px" height="5px" border="3px">
                 <TableHead>
                   <TableRow>
@@ -115,22 +115,23 @@ class detallesCamion extends React.Component {
               </Table>
             </fieldset>
 
-            <div className="butonsDetalles">
+            <div className="Grupo_Botones">
               <input
                 type="button"
-                className="botonDetalles"
-                id="detalle"
-                value="Editar camión"
+                className="Boton_Editar"
+                id="Editar"
+                value="Editar_Camión"
               />
               <input
                 type="button"
-                className="botonDetalles"
-                id="elimina"
-                value="Eliminar camión"
+                className="Boton_Eliminar"
+                id="Eliminar"
+                value="Eliminar_Camión"
               />
             </div>
           </fieldset>
         </form>
+
       </div>
     );
   }

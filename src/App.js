@@ -1,19 +1,5 @@
-<<<<<<< HEAD
 import React from "react";
 import HeaderPagina from "./Componentes/headerPagina";
-//import RegistrarUsuario from './Componentes/registrarUsuario';
-//import DetallesCamionero from './Componentes/detallesCamionero';
-import DetallesCamion from './Componentes/detallesCamion';
-export default function App() {
-	return (
-		<div>
-			<HeaderPagina />
-			<DetallesCamion/>
-		</div>
-	);
-}
-=======
-import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 //src
@@ -36,4 +22,4 @@ export default function App() {
     </BrowserRouter>
   );
 }
->>>>>>> f06ef60998b17fd2d74ede44f1349b5e9cd4eb79
+
