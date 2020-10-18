@@ -1,4 +1,5 @@
-import React from 'react';
+import React from "react";
+import HeaderPagina from "./Componentes/headerPagina";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 //src
@@ -21,3 +22,4 @@ export default function App() {
     </BrowserRouter>
   );
 }
+

@@ -1,0 +1,116 @@
+.Estilo_Camion {
+    max-width: 1000px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    margin: 10px auto;
+    padding: 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.Estilo_Camion fieldset {
+    border: none;
+}
+
+.Estilo_Camion legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.Estilo_Camion label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.Estilo_Camion .number {
+    background: #0d1855;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 15px 15px 15px 0px;
+}
+
+.Estilo_Camion fieldset {
+    border: none;
+}
+
+.Estilo_Camion legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.Estilo_Camion label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.Estilo_Camion div[class="Grupo_Botones"] {
+    display: flex;
+    background: rgb(196, 196, 195);
+    justify-content: space-around;
+}
+
+.Estilo_Camion div input[class="Boton_Editar"] {
+  background: rgb(255, 255, 255);
+}
+
+.Estilo_Camion div input[class="Boton_Eliminar"] {
+  background: rgb(255, 255, 255);
+}
+
+.Estilo_Camion div input[id="Eliminar"]:hover {
+    background: rgb(255, 128, 73);
+}
+
+.Estilo_Camion div input[id="Editar"]:hover {
+    background: rgb(134, 162, 239);
+}
+
+.Estilo_Camion input[type="button"] {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+    background: #0d1855;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+/*queda pendiente la img*/
+.Estilo_Camion input [type="img"]{
+    width: 100px; height: 100px; object-fit: contain;
+}
+
+table {
+   width: 100%;
+   border: 1px solid #000;
+}
+th, td {
+   width: 25%;
+   text-align: left;
+   vertical-align: top;
+   border: 1px solid #000;
+   border-collapse: collapse;
+   padding: 0.3em;
+   caption-side: bottom;
+}
+caption {
+   padding: 0.3em;
+   color: #fff;
+    background: #000;
+}
+th {
+   background: #eee;
+}
