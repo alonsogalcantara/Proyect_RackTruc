@@ -6,7 +6,7 @@ import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 
 import "../Styles/verCamiones.css";
-
+import HeaderPagina from "./headerPagina";
 function clickAccederInformacion() {
     console.log("==================================================");
     console.log("Diste click en Acceder a la Informacion del Camión");
@@ -17,12 +17,18 @@ function clickAccederInformacion() {
 class verCamiones extends React.Component{
     render(){
     return <div className = "detailStyle" >
-        <form>
+      <div>
+          <HeaderPagina/>
+          </div>
+        <form> 
+
+          
+         
             <fieldset>
               <legend>
                 <span className="number">1</span>Camiones
               </legend>
-
+              
 
             <div>
             <Table width="10px" height="5px" border="3px">
