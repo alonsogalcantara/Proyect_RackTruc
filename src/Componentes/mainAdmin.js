@@ -12,7 +12,7 @@ class mainAdmin extends React.Component{
                 <Link to="/detallesCamionero">Detalles camionero</Link>
               </li>
               <li>
-                <Link to="/detallesCamion">Detalles camion</Link>
+                <Link to="/verCamiones">Ver camiones</Link>
               </li>
               <li>
                 <Link to="/registrarUsuario">Registrar usuario</Link>
