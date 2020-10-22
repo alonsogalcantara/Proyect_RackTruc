@@ -1,38 +1,22 @@
 import React from 'react';
-<<<<<<< HEAD
 
-=======
->>>>>>> f06ef60998b17fd2d74ede44f1349b5e9cd4eb79
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 //src
 import LoginUsuario from './Componentes/loginUsuario';
-<<<<<<< HEAD
-import detallesCamionero from "./Componentes/detallesCamionero";
-=======
-import mainAdmin from "./Componentes/mainAdmin";
-import detallesCamionero from "./Componentes/detallesCamionero";
-import detallesCamion from "./Componentes/detallesCamion";
-import registrarUsuario from "./Componentes/registrarUsuario";
->>>>>>> f06ef60998b17fd2d74ede44f1349b5e9cd4eb79
+import detallesCamionero from './Componentes/detallesCamionero';
+import PagePrincipalAdmi from './Componentes/PagePrincipalAdmi';
+
 
 export default function App() {
   return (
     <BrowserRouter>
       <Switch>
         <Route exact path="/login" component={LoginUsuario} />
-<<<<<<< HEAD
         <Route exact path="/detallesCamionero" component={detallesCamionero} />
+        <Route exact path="/PagePrincipalAdmi"component={PagePrincipalAdmi} />
       </Switch>
     </BrowserRouter>
 
-=======
-        <Route exact path="/mainAdmin" component={mainAdmin} />
-        <Route exact path="/detallesCamionero" component={detallesCamionero} />
-        <Route exact path="/detallesCamion" component={detallesCamion} />
-        <Route exact path="/registrarUsuario" component={registrarUsuario} />
-      </Switch>
-    </BrowserRouter>
->>>>>>> f06ef60998b17fd2d74ede44f1349b5e9cd4eb79
   );
 }

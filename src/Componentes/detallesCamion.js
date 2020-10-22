@@ -138,5 +138,4 @@ class detallesCamion extends React.Component{
     }
 }
 
-
 export default detallesCamion;
