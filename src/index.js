@@ -9,8 +9,8 @@ import AlertTemplate from "react-alert-template-basic";
 import App from "./App";
 
 ReactDOM.render(
-  <AlertProvider template={AlertTemplate}>,
-    <App/>,
+  <AlertProvider template={AlertTemplate}>
+    <App/>
   </AlertProvider>,
   document.getElementById("root")
 );

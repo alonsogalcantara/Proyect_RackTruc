@@ -230,7 +230,6 @@ class registrarUsuario extends React.Component {
             value="Cancelar"
             onClick={() => {
               this.props.history.push('/mainAdmin');
-              ;
             }}
           />
         </form>
