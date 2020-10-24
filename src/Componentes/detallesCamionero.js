@@ -46,21 +46,26 @@ const DCamion = [RdatosCamion("trailer", "nissan", "1knsi1", 10273)];
 //exportamos la funcion para que pueda ser usada en la clase APP
 export default function DatosCamionero() {
   return (
-    <div className="detailStyle">
+    <div className="Estilo_Camion">
       <form>
         <fieldset>
-          <legend>
+
+          <legend style={{ margin: 10 }}>
             <span className="number">1</span>Informaci&oacute;n camionero
           </legend>
 
-          <div className="detallesCamionero">
             <img
+              type="img"
+              id="Img_No1"
               src="https://media.istockphoto.com/vectors/ethnic-diversity-group-of-people-drawing-vector-id888882708"
-              style={{ height: 100, width: 100 }}
               alt="Imagen camion"
-            />
+              width="100"
+              height="100"
+              align="center"
+            /> 
 
-            <div>
+            <div className="Tbl_Camionero">
+
               <Table width="10px" height="5px" border="3px">
                 <TableHead>
                   <TableRow>
@@ -97,15 +102,16 @@ export default function DatosCamionero() {
                     </TableRow>
                   ))}
                 </TableBody>
+
               </Table>
             </div>
-          </div>
-
+          
           <legend style={{ margin: 10 }}>
             <span className="number">2</span>Camionero
           </legend>
 
-          <div>
+          <div className="Tbl_Camionero">
+
             <Table width="10px" height="5px" border="3px">
               <TableHead>
                 <TableRow>
@@ -177,25 +183,25 @@ export default function DatosCamionero() {
             </Table>
           </fieldset>
 
-          <div className="butonsDetalles">
+          <div className="Grupo_Botones">
             <input
               type="button"
-              className="botonDetalles"
-              id="venta"
+              className="Boton_Detalles"
+              id="Detalles"
               value="Ventas"
               onClick={clickVentas}
             />
             <input
               type="button"
-              className="botonDetalles"
-              id="detalle"
+              className="Boton_Editar"
+              id="Editar"
               value="Editar usuario"
               onClick={clickEditarUsuario}
             />
             <input
               type="button"
-              className="botonDetalles"
-              id="elimina"
+              className="Boton_Eliminar"
+              id="Eliminar"
               value="Eliminar usuario"
               onClick={clickEliminarUsuario}
             />
