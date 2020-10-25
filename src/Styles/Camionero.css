@@ -1,4 +1,4 @@
-.Estilo_Camion {
+.Estilo_Camionero {
     max-width: 1000px;
     padding: 10px 20px;
     background: #f4f7f8;
@@ -9,21 +9,21 @@
     font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.Estilo_Camion fieldset {
+.Estilo_Camionero fieldset {
     border: none;
 }
 
-.Estilo_Camion legend {
+.Estilo_Camionero legend {
     font-size: 1.4em;
     margin-bottom: 10px;
 }
 
-.Estilo_Camion label {
+.Estilo_Camionero label {
     display: block;
     margin-bottom: 8px;
 }
 
-.Estilo_Camion .number {
+.Estilo_Camionero .number {
     background: #0d1855;
     color: #fff;
     height: 30px;
@@ -37,51 +37,51 @@
     border-radius: 15px 15px 15px 0px;
 }
 
-.Estilo_Camion fieldset {
+.Estilo_Camionero fieldset {
     border: none;
 }
 
-.Estilo_Camion legend {
+.Estilo_Camionero legend {
     font-size: 1.4em;
     margin-bottom: 10px;
 }
 
-.Estilo_Camion label {
+.Estilo_Camionero label {
     display: block;
     margin-bottom: 8px;
 }
 
-.Estilo_Camion div[class="Grupo_Botones"] {
+.Estilo_Camionero div[class="Grupo_Botones"] {
     display: flex;
     background: rgb(196, 196, 195);
     justify-content: space-around;
 }
 
-.Estilo_Camion div input[class="Boton_Detalles"] {
+.Estilo_Camionero div input[class="Boton_Detalles"] {
   background: rgb(255, 255, 255);
 }
 
-.Estilo_Camion div input[class="Boton_Eliminar"] {
+.Estilo_Camionero div input[class="Boton_Eliminar"] {
   background: rgb(255, 255, 255);
 }
 
-.Estilo_Camion div input[class="Boton_Editar"] {
+.Estilo_Camionero div input[class="Boton_Editar"] {
   background: rgb(255, 255, 255);
 }
 
-.Estilo_Camion div input[id="Eliminar"]:hover {
+.Estilo_Camionero div input[id="Eliminar"]:hover {
     background: rgb(255, 128, 73);
 }
 
-.Estilo_Camion div input[id="Detalles"]:hover {
+.Estilo_Camionero div input[id="Detalles"]:hover {
     background: rgb(134, 162, 239);
 }
 
-.Estilo_Camion div input[id="Editar"]:hover {
+.Estilo_Camionero div input[id="Editar"]:hover {
     background: rgb(199, 218, 25);
 }
 
-.Estilo_Camion input[type="button"] {
+.Estilo_Camionero input[type="button"] {
     position: relative;
     display: block;
     padding: 19px 39px 18px 39px;
@@ -97,7 +97,7 @@
     margin-bottom: 10px;
 }
 /*queda pendiente la img*/
-.Estilo_Camion input [type="img"]{
+.Estilo_Camionero input [type="img"]{
     width: 100px; height: 100px; object-fit: contain;
 }
 

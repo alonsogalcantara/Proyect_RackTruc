@@ -46,7 +46,7 @@ const DCamion = [RdatosCamion("trailer", "nissan", "1knsi1", 10273)];
 //exportamos la funcion para que pueda ser usada en la clase APP
 export default function DatosCamionero() {
   return (
-    <div className="Estilo_Camion">
+    <div className="Estilo_Camionero">
       <form>
         <fieldset>
 
