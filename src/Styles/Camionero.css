@@ -122,3 +122,24 @@ caption {
 th {
    background: #eee;
 }
+
+.Estilo_Camionero{
+   background-color: #ddd;
+   width: 2000px;
+   padding: 20px;
+   
+   box-shadow: 5px 5px 0 #333;
+   -webkit-box-shadow: 5px 5px 0 #333;
+   -moz-box-shadow: 5px 5px 0 #333;
+}
+
+#Estilo_Camionero{
+   width: 2000px;
+   padding: 10px;
+   background-color: #999;
+   color: #fff;
+   
+   box-shadow: 2px 2px 2px #ffc;
+   -webkit-box-shadow: 2px 2px 2px #ffc;
+   -moz-box-shadow: 2px 2px 2px #ffc;
+}
